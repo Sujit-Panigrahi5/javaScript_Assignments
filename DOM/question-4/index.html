@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .from{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            outline: 1px solid red;
+            gap: 20px;
+        }
+        .fromitem{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form class="from">
+        <div class="fromitem">
+            <label for="name">Name:</label>
+            <input type="text" name="" id="name" placeholder="(Minimum 3 character)">
+        </div>
+        <div class="fromitem">
+            <label for="email">Email:</label>
+            <input type="email" name="" id="email" placeholder="Enter you email">
+        </div>
+        <div class="fromitem">
+            <label for="password">Password:</label>
+            <input type="password" name="" id="password" placeholder="(Minimum 8 character)">
+        </div>
+        <button onclick="valid(); return false;">Submit</button>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
